@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>CV</title>
+	<meta charset = "utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--Styling background and h1-->
+	<style>
+	.web_background{
+		background-position: center; /* Center the image */
+		background-image: url("../image/BG5.jpg");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+	}
+
+
+	.nav{
+	text-align:center;
+	width:100%;
+	position: absolute;
+	background-color:#0009 ;
+	line-height:1px;
+	padding: 2px 16px;
+	}
+
+
+	h3{
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+img{
+
+	padding: 1px 1px;
+	margin-top: 0px;
+	margin-left: 3%;
+	width :211px;
+	height:201px;
+}
+
+
+
+
+	
+	
+	</style>
+	<!--Linking external css-->
+		<link rel="stylesheet" href="..\CSS\link.css">
+		<link rel="stylesheet" href="..\CSS\button.css">
+		<link rel="stylesheet" href="..\CSS\cv.css">
+
+	<!--Displaying JS time and date-->
+	<script type="text/javascript"> 
+				function display_c(){
+				var refresh=1000; // Refresh rate in milli seconds
+				mytime=setTimeout('display_ct()',refresh)
+				}
+
+				function display_ct() {
+				var x = new Date()
+				document.getElementById('ct').innerHTML = x;
+				display_c();
+				 }
+	</script>
+	</head>
+		<!--Span tag is used for grouping-->
+		<body class="web_background" onload=display_ct(); background-color:white;>
+			<div align="right">
+				<span id='ct'></span>
+			</div>
+			<!--For aligning in center and linking navigation bar-->
+			<div align="center">
+				<div class="nav">
+					<br></br>
+					<b><a href="homepage.html"class="icons">Homepage</a></b>
+					<b><a href="CV.html"class="icons">Portfolio</a></b>
+					<b><a href="blogsection.html"class="icons">Blog</a></b>
+					<b><a href="researchsection.html"class="icons">Research</a></b>
+					<b><a href="contactspage.html"class="icons">Contacts</a></b>
+				</div>
+			</div><br><br>
+
+			
+			<br></br>
+
+			<!--Making table for the resume-->
+
+<table border="3" align="center" width="60%" bgcolor="#0009" cellpadding="10%">
+
+<tr style="background-color: #E6D899">
+
+
+<th> <h1 style="color:#FFFFFF;">Welcome To My Resume 
+
+
+<tr style="color:#FFFFFF;"> <th align="left"> <h2> Name:Nabin Gurung</h2>
+	<img src="..\image\CVPIC.jpg" align="right" >
+<b>Gender:Male</b><br><br>
+Mobile number:+9779846458568 <br><br>
+Email:nobig22@gmail.com<br><br>
+<h2>Personal Information:</h2>
+
+<ul>
+
+	<li>Father Name:Purna Bahadur Gurung<br><br></li>
+	<li>Mother Name:Maya Gurung<br><br></li>
+	<li>Religion:Buddhist<br><br></li>
+	<li>2Date of Birth:2000/01/09<br><br></li>
+	<li>Nationality:Nepali<br><br></li>
+	<li>Martial Status:Single<br><br></li>
+	<li>Permanent address:Lamjung ,Bhulbhule<br><br></li>
+	<li>Temporary address:Kathmandu ,Kadaghari<br><br></li>
+
+</ul>
+
+<h2>Qualification:</h2>
+
+<!--Making qualification table-->
+<table border="4" width="70%" bgcolor="#E6D899" cellpadding="10%" cellspacing="10" >
+	<tr style="color:#000000;"><th> S.N.</th><th>Qualification</th><th>Grades</th><th>Institute</th></tr>
+
+	<tr style="color:#000000;">
+		<td>1</td>
+		<td>SLC</td>
+		<td>A</td>
+		<td>Puspha Kunja High School</td>
+	</tr>
+	<tr style="color:#000000;">
+		<td>2</td>
+		<td>10+2(Computer Science)</td>
+		<td>B+</td>
+		<td>V.S Niketan College</td>
+	</tr>
+	<tr style="color:#000000;">
+		<td>3</td>
+		<td>Bsc(Hons) Computing</td>
+		<td>Ongoing</td>
+		<td>Islington International College</td>
+	</tr>
+	
+</table>
+
+<h2>Personal Skills:</h2>
+<ul>
+	<li>Gamer at LEGEND.club</li><br>
+	<li>Programmer at JAVA and Python, Web Designing </li><br>
+	<li>Internet Marketing</li><br>
+	<li>Riding Bikes</li><br>
+</ul>
+
+
+<h2>Language:</h2>
+<ul>
+	<li>English</li><br>
+	<li>Nepali</li><br>
+	<li>Gurung</li><br>
+</ul>
+
+
+</th>
+</tr> 
+</table>
+			
+		<!--Linking of social media icons-->
+<div align="left">
+				
+					<a href="https://www.facebook.com/profile.php?id=100008596449445" class="fa fa-facebook"></a>
+					<a href="https://www.instagram.com/crosszon_nabin/" class="fa fa-instagram"></a>
+					<a href="https://www.google.com/" class="fa fa-google"></a>
+				
+			</div>
+	</body>
+		
+</html>

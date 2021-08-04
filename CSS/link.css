@@ -1,0 +1,63 @@
+
+body{
+	margin:0;
+	padding:0;
+}
+/*Styling contact form*/
+.contact-form{
+	position:absolute;
+	top:18%;
+	left:33%;
+	width: 400px;
+
+	padding:32px 37px;
+
+	background:#F0D457 ;
+	margin: auto;
+}
+
+h3{
+		font-size:17px;
+		font-family:"Calibri (Body)";
+		
+		}
+		
+
+		
+/* styling size and position of image*/
+.minions{
+
+	width:65px;
+	height:65px;
+	border-radius:100%;
+	overflow:hidden;
+	top:calc(-80px/2);
+
+}
+/*Styling heading tag*/
+.contact-form h2{
+	margin:0 0 10px;
+	padding: 0 0 20px;
+	color: #red;
+	text-align:center;
+	text-transform: uppercase;
+}
+/* styling input of form*/
+.contact-form input{
+	width:95%;
+	margin-bottom:20px;
+}
+/* Styling buttons*/
+.contact-form button{
+	
+	text-transform:uppercase;
+	outline: 0;
+	background: pink;
+	border: 0;
+	padding: 15px;
+	color: #FFFFFF;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+

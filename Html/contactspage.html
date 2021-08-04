@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!--Tittle-->
+	<title>Contact page</title>
+	<!--Using meta tags-->
+	<meta charset = "utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--Styling background of webpage-->
+	<style>
+		.web_background{
+		background-image: url("../image/BG2.jpg");
+		background-position: center; /* Center the image */
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-attachment: fixed;
+		color: white;
+		}	
+		
+		h2{
+		font-size:50px;
+		font-family:"Calibri Light (Headings)";
+		}
+
+	</style>
+	<!--Linking external css-->
+	<link rel="stylesheet" href="..\CSS\link.css">
+	<link rel="stylesheet" href="..\CSS\button.css">
+	<script type="text/javascript"> 
+
+		function display_c(){
+		var refresh=1000; // Refresh rate in milli seconds
+		mytime=setTimeout('display_ct()',refresh)
+		}
+
+		function display_ct() {
+		var x = new Date()
+		document.getElementById('ct').innerHTML = x;
+		display_c();
+		 }
+	</script>
+	</head>
+	<!--Span tag is used for grouping-->
+		<div align="right">
+			<body class="web_background" onload=display_ct();>
+				<span id='ct'></span>
+		</div>
+		<!--For aligning in center and linking navigation bar-->
+		<div align="center">
+			<nav>
+				<br></br>
+				<b><a href="homepage.html"class="icons">Home Page</a></b>
+				<b><a href="CV.html"class="icons">Portfolio</a></b>
+				<b><a href="blogsection.html"class="icons">Blog</a></b>
+				<b><a href="researchsection.html"class="icons">Research</a></b>
+				<b><a href="contactspage.html"class="icons">Contacts</a></b>
+			</nav>
+			
+		</div>
+		<!--Linking social media icons-->
+		<div id="footer">
+		
+			<div align="right">
+				<nav>
+					<a href="https://www.facebook.com/profile.php?id=100008596449445" class="fa fa-facebook"></a>
+					<a href="https://www.instagram.com/crosszon_nabin/" class="fa fa-instagram"></a>
+					
+					<a href="https://www.google.com/" class="fa fa-google"></a>
+				</nav>
+			</div>
+		
+		</div>
+
+		<!-- Displaying Message in dialogbox-->
+		<script type="text/javascript">
+			function formvalidation(){
+				var fullName = document.getElementById('name').value;
+				var address = document.getElementById('address').value;
+				var emailId = document.getElementById('email').value;
+				var Contact = document.getElementById('number').value;
+				
+				if(fullName ==""){
+					window.alert("Please enter your name");
+					return false;
+				}if(!isNaN(fullName)){ 
+					window.alert("Invalid name");
+					return false;
+				}if(emailId ==""){
+					
+					window.alert("Please enter your email address");
+					return false;
+				}if(Contact ==""){
+					
+					window.alert("Please enter your contact number");
+					return false;
+					
+				}if(isNaN(Contact)){
+					window.alert("You must enter a valid number");
+					return false;
+					
+				}if(address ==""){
+					
+					window.alert("Please enter your address");
+					return false;
+					
+				}else{
+					window.alert("Thank you!");
+				}
+				
+			
+			}
+			
+		
+			</script>
+			
+	<!--Making Validation form-->
+		<div class ="contact-form">
+
+			<!--Adding logo in contact form-->
+			<h2>Contact Us <img src="..\image\images.jpg" alt="" class="minions"></h2>
+
+			<h5>Got a question? We'd Love to hear from you.Send us a message and we'll respond as soon as possible.</h5>
+			<div class="container">
+			<div class="col-lg-8 m-auto d-block">
+			<form action="#" onsubmit ="return formvalidation()" class="light" method="POST">
+			<div class = "contact">
+				<label>Full Name: </label>
+				<input type = "text" name="fullname" value="" placeholder = "Enter Your Name Here" class="formAction" id="name">
+				<br>			
+			</div>
+			<div class = "contact">
+				<label>Address: </label>
+				<input type = "text" name="addressname" value="" placeholder = "Enter Your Address Here" class="formAction" id="address">
+				<br>			
+			</div>
+					
+			<div class = "contact">
+				<label>Email: </label>
+				<input type = "email" name="emailid" value="" placeholder = "Enter Your Email address Here" class="formAction" id="email">
+				<br>			
+			</div>
+
+			<div class = "contact">
+				<label>Contact Number: </label>
+				<input type = "text" name="numbercontact" value="" placeholder = "Enter Your Contact Number Here" class="formAction" id="number">
+				<br>			
+			</div>
+			
+			<div class = "contact" >
+				<label>Subject:</label>
+				<br>
+				<textarea name="message" value=""  rows="6" cols="52" placeholder = "Enter Any Message You Want" class="formAction" id="messagebox"></textarea>
+				<br>
+
+
+				<br></br>
+				<input type="submit" name="Submit" value="Submit" class="button">
+				
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+
+/* styling email class*/
+
+
+.email{
+	color:red;
+	text-align:center;
+}
+/* styling title*/
+.title {
+	color: #950000 ;
+	font-size: 1.3em;
+	
+	letter-spacing: 0.20px;
+	font-weight: bold;
+	border-bottom: 2px solid white;
+}
+ h1{
+	
+	text-transform: uppercase;
+	font-family:"Calibri Light (Headings)";
+	color:#885050;
+	padding: 2px;
+	}
+
+h3{
+	font-size: 0.8em;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+
+/* styling image size and position*/
+.photo{
+	margin-left:700px;
+	margin-top:100px;
+	width: 200px;
+}
+/* Setting position*/
+.cvtext{
+	margin-top: -545px;
+}
+
+th{
+
+	padding: 9px 47px;
+}

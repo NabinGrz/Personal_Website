@@ -1,0 +1,105 @@
+/* styling navigation bar*/
+.icons{
+	color:white;
+	padding: 17px 32px;
+	text-decoration: none;
+	font-size:19px;
+	opacity:50;
+	font-family:Bell MT;
+	float:left;
+	border-right: 2px solid #999;
+	transition:0.8s all;
+
+	
+}
+
+
+nav{
+
+	background-color:#0009 ;
+	line-height:1px;
+	padding: 2px 16px;
+
+}
+
+nav b{
+	display:inline-block;
+}
+
+/*For hover of navigation bar*/
+a:hover{
+	background-color:#E8A42C;
+	opacity:0.9;
+}
+/* styling social media icons*/
+.fa{
+	padding: 12px;
+	font-size: 15px;
+	width: 15px;
+	text-align: center;
+	text-decoration: none;
+	margin: 11.01px -0.99px;
+	border-radius: 89%;
+}
+
+h4{
+		font-size:35px;
+		font-family:"Calibri (Body)";
+  position: absolute;
+  left: 600px;
+  top: 19%;
+
+		}
+		
+
+
+.fa:hover{
+	background-color:black;
+	opacity:1;
+
+
+}
+.fa-facebook{
+	background: #3B5998; 
+	color: white;
+}
+.fa-google{
+	background: #FFFFFF;
+	color: Blue;
+}
+.fa-instagram{
+	background: #CF529F;
+	color: white;
+}
+/* Setting position of social media icons in footer section*/
+#footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+		}
+h1{
+	
+	font-size:45px;
+
+	height: 23px;
+    width: 100%;
+		
+}
+h6{
+	font-size: 50px;
+	color: Black;
+}
+
+		
+p{
+	
+	font-size:16px;
+		font-family:"Arial";
+		color:white;
+		padding: 1px;
+		background-color: #0009;
+		
+		
+}

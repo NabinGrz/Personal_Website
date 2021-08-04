@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Homepage</title>
+	<!--using meta tags-->
+	<meta name="viewport" content="width=device-width">
+	<!--for icons-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--Styling body and background of-->
+	<style>
+		body{
+			margin:0;
+			padding:0;
+			font-family:arial;
+			background-image: url("../image/BG5.jpg");
+			background-position: center; /* Center the image */
+			background-repeat: no-repeat;
+			background-size:100%;
+			background-attachment: fixed;
+			
+		}
+		h3{
+			text-align: center;
+			color:black;
+			font-size: 26px;
+
+		}
+      
+	</style>
+
+	<!--linking external css-->
+	<link rel="stylesheet" href="..\CSS\button.css">
+
+	<!--For displaying JS time and date-->
+	<script type="text/javascript">
+		function display_c(){
+		var refresh=1000; // Refresh rate in milli seconds
+		mytime=setTimeout('display_ct()',refresh)
+		}
+
+		function display_ct() {
+		var x = new Date()
+		document.getElementById('ct').innerHTML = x;
+		display_c();
+		}		 
+	</script>
+	<!--For positing JS time and date-->
+	</head>
+		<body  class="web_background" onload=display_ct(); >
+			<div align="right">
+			<span id='ct'></span>
+			</div>
+			<!--For navigation bar-->
+
+
+			<div align="left">
+			<nav>
+
+			<br>
+					<b><a href="homepage.html"class="icons">Home Page</a></b>
+					<b><a href="CV.html"class="icons">Portfolio</a></b>
+					<b><a href="blogsection.html"class="icons">Blog</a></b>
+					<b><a href="researchsection.html"class="icons">Research</a></b>
+					<b><a href="contactspage.html"class="icons">Contacts</a></b>
+
+			</nav>
+
+			<!--Assigning id-->
+			<h1 id="change" align="center">
+				Welcome To my Website
+				</h1>
+				<h3 id="mymessage"></h3>
+				
+				
+			<!--For displaying dialog box-->
+			<script>
+				var name= prompt("Enter your name here");
+				//document.write("<p id="myname">"</p>");
+				document.getElementById("mymessage").innerHTML=name;
+			</script>
+	
+			</div>
+
+		<div id=footer>
+
+<tr>
+<p> <img src="..\image\ABME2.png" width="6%" height="6%" align="center">
+Hey,this is my homepage, so I have to say something about myself. I hope that my impression about myself and your
+ impression about
+ me are not so different. Here it goes.<br><br>
+
+My Name is Nabin Gurung. I am an inhabitant of Kadaghari currently studying BIT(Computing) at Islington school located in Kamalpokhari. 
+I finished my SLC i.e grade 10 in Puspha Kunja High School, Gongabu and afterward sought after my +2 in Science at V.S Niketan, 
+Tinkune. I am as of now in my Second semester which is going to end soon. 
+<br>I am a person who is positive about every aspect of life. 
+There are many things I like to do, to see, and to experience. I like to read, I like to write; I like to think, I like to dream; 
+I like to talk, I like to listen. I like to see the sunrise in the morning, I like to see the moonlight at night; I like to feel
+ the music flowing on my face, I like to smell the wind coming from the ocean.  I like the land and the nature, I like people. And, I like to laugh.
+
+ <br> 
+I am likewise a bike lover and I love riding bike. 
+It is a standout amongst other pressure relievers for me. I am an extremely dynamic individual. 
+I like to take part in various types of occasions and 
+Riding a motorcycle brings a sense of calm and ease to your mind and body, which could be achieved otherwise only through meditation.
+ Also, many riders refer to their bike as their therapist, as motorcycles make you feel energised and refreshed after each ride.
+ <br><br>
+ <b>THANK U FOR VISITING MY WEBSITE!!<b>
+                                                                  
+</p>
+			<!--Assigning id and social media icons-->
+			<div align="left">
+				
+					<a href="https://www.facebook.com/profile.php?id=100008596449445" class="fa fa-facebook"></a>
+					<a href="https://www.instagram.com/crosszon_nabin/" class="fa fa-instagram"></a>
+					<a href="https://www.google.com/" class="fa fa-google"></a>
+				
+			</div>
+		
+		</div>
+		
+		</body>		
+</html>

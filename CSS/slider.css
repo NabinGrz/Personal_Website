@@ -1,0 +1,101 @@
+*{
+	box-sizing:border-box;
+}
+
+.slideshowContainer{
+	display: flex;/*row class for creating a row/containner*/
+	padding-left:150px;
+	padding-right:100px;
+}
+.secondcontainer{
+	display: flex;
+	padding-left:150px;
+	padding-right:200px;
+}
+.middlecolumn{
+	flex:70%;
+}
+.leftcolumn{
+	flex: 70%;/*class for left side column with width 75%*/
+}
+.rightcolumn{
+	flex:30%;/*class for right side column with width 25%*/
+	padding-left:20px;/*padding-left t*/
+}
+.middleright{
+	flex:30%;/*class for right side column with width 25%*/
+	padding-left:150px;/*padding-left t*/
+}
+.slider{
+	padding:45px;
+
+	background:rgba(0,0,0,0.6);
+	margin-top: 125px;
+	text-align:justify;
+}
+.tech{
+	background-color:rgba(0,0,0,0.6);
+	padding:20px;
+	margin-top:20px;
+}
+.videos{
+	padding-top:30px;
+	position:relative;
+}
+.videos video{
+	position:absolute;
+	padding-right:30px;
+
+}
+.quotes{
+	background-color:rgba(0,0,0,0.6);
+	padding:20px;
+	margin-top:20px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+p{
+	
+	font-size:17px;
+		font-family:"Calibri (Body)";
+		color:white;
+		padding: 32px;
+		background-color: #0009;
+		
+		
+}
+
